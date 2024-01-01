@@ -1,8 +1,8 @@
-// @ts-check
-
 /**
  * @type {import('next').NextConfig}
  **/
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   /**
    * Enable static exports for the App Router.
@@ -16,7 +16,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: "/Portfolio2.0",
+  basePath: isProd ? "/Portfolio2.0" : "",
 
   /**
    * Disable server-based image optimization. Next.js does not support
