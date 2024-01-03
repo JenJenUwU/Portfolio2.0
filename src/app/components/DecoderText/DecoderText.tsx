@@ -82,7 +82,6 @@ const DecoderText: React.FC<DecoderTextProps> = ({
     const startSpring = async () => {
       await delay(startDelay);
     };
-    console.log(isInView);
     if (isInView && !reduceMotion) {
       startSpring().then(() => decoderSpring.set(content.length));
     }

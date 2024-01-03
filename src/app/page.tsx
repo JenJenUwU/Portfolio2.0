@@ -2,16 +2,11 @@
 import React from "react";
 import { Hero } from "./components/Sections";
 
-const Home = () => {
+const App = () => {
   return (
-    <main className="overflow-x-hidden relative z-0 mx-auto">
-      <section className="h-screen">
-        <p className="text-4xl md:text-[200px] md:leading-relaxed">
-          Scroll down
-        </p>
-      </section>
+    <main className="overflow-x-hidden z-0">
       <Hero />
     </main>
   );
 };
-export default Home;
+export default App;
