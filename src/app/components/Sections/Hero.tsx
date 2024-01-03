@@ -4,7 +4,7 @@ import { styles } from "@/app/utils/styles";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto flex items-center justify-center">
+    <section className="relative w-full h-screen mx-auto flex items-start justify-center">
       <DecoderText
         text="Jay Lin"
         delay={300}
