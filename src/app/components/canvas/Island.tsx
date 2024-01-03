@@ -62,7 +62,7 @@ const IslandCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [15, 5, 7], fov: 50 }}
+      camera={{ position: [15, 5, 7], fov: 60 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense>
