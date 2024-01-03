@@ -51,7 +51,6 @@ const DecoderText: React.FC<DecoderTextProps> = ({
   text,
   delay: startDelay = 0,
   className,
-  ...rest
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.5, once: true });
@@ -99,9 +98,9 @@ const DecoderText: React.FC<DecoderTextProps> = ({
   }, [decoderSpring, reduceMotion, startDelay, text, isInView]);
 
   return (
-    <span className={className} {...rest}>
+    <span className={className}>
       <span aria-hidden ref={container}>
-        <span className="inline-block" ref={ref} />
+        <span ref={ref} />
       </span>
     </span>
   );

@@ -4,7 +4,7 @@ import { Hero } from "./components/Sections";
 
 const App = () => {
   return (
-    <main className="overflow-x-hidden z-0">
+    <main className="overflow-x-hidden z-0 bg-senary">
       <Hero />
     </main>
   );
