@@ -1,7 +1,7 @@
 /**
  * @type {import('next').NextConfig}
  **/
-const isProd = process.env.NODE_ENV === 'production';
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
   /**
@@ -16,7 +16,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: isProd ? "/Portfolio2.0" : "",
+  basePath: isProd ? "/portfolio-v2" : "",
 
   /**
    * Disable server-based image optimization. Next.js does not support
