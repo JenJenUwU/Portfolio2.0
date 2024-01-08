@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { DecoderText } from "@/app/components/DecoderText";
-import { IslandCanvas } from "@/app/components/canvas";
+import { IslandCanvas } from "@/app/components/Canvas";
 import { styles } from "@/app/utils/styles";
 
 const Hero = () => {
