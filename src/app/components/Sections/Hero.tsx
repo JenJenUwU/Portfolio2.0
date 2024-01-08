@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { DecoderText } from "@/app/components/DecoderText";
 import { IslandCanvas } from "@/app/components/canvas";
