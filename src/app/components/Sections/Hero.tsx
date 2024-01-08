@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.heroPadding} absolute inset-0 flex xl:flex-row flex-col items-center`}
+        className={`${styles.heroPadding} absolute inset-0 flex flex-shrink-0 xl:flex-row flex-col items-center`}
       >
         <div className="relative">
           <h1 className={`${styles.heroIntroText} text-quaternary`}>
@@ -27,7 +27,7 @@ const Hero = () => {
             who loves to craft and code.
           </h3>
         </div>
-        <div className="relative flex-auto h-full max-xl:w-full">
+        <div className="relative flex flex-auto h-full max-xl:w-full">
           <IslandCanvas />
         </div>
       </div>
