@@ -16,13 +16,13 @@ const Island: React.FC<IslandProps> = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.75} />
-      <pointLight intensity={3} />
-      <spotLight position={[0, 1, 0]} castShadow intensity={1} />
+      <hemisphereLight intensity={0.75} position={[0, 0.5, 0]} />
+      <pointLight intensity={isMobile ? 0.3 : 3} position={[0, 0.5, 0]} />
+      <spotLight position={[0, 1.5, 0]} castShadow intensity={1} />
       <primitive
         object={island.scene}
         scale={isMobile ? 0.75 : 1.5}
-        position={isMobile ? [0, -1, -0] : [0, -1, 0]}
+        position={isMobile ? [0, -0.5, -0] : [0, -0.5, 0]}
         rotation={[0, 0, 0]}
       />
     </mesh>
@@ -37,7 +37,7 @@ const Gura: React.FC<GuraProps> = ({ isMobile }) => {
       <primitive
         object={object.scene}
         scale={isMobile ? 0.25 : 0.5}
-        position={isMobile ? [-0.25, -0.34, -0.15] : [-0.5, 0.31, -0.3]}
+        position={isMobile ? [-0.25, 0.16, -0.15] : [-0.5, 0.81, -0.3]}
         rotation={[0, Math.PI / 3, 0]}
       />
     </mesh>
@@ -48,7 +48,7 @@ const IslandCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 600px)");
+    const mediaQuery = window.matchMedia("(max-width: 640px)");
     setIsMobile(mediaQuery.matches);
     const handleMediaQueryChange = (event: any) => {
       setIsMobile(event.matches);
@@ -62,7 +62,7 @@ const IslandCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [15, 5, 7], fov: 60 }}
+      camera={{ position: [15, 5, 7], fov: isMobile ? 35 : 50 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense>

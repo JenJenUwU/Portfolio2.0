@@ -7,7 +7,9 @@ import { styles } from "@/app/utils/styles";
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
-      <div className="absolute inset-0 flex flew-row justify-start items-center px-48">
+      <div
+        className={`${styles.heroPadding} absolute inset-0 flex xl:flex-row flex-col items-center`}
+      >
         <div className="relative">
           <h1 className={`${styles.heroIntroText} text-quaternary`}>
             Hi, my name is
@@ -19,14 +21,13 @@ const Hero = () => {
           />
           <div className={`${styles.heroHeadText} invisible`}>
             あああああああ
-            {/* animation text placeholder  */}
           </div>
-          <h2 className={`${styles.heroSubText} text-secondary`}>
+          <h3 className={`${styles.heroSubText} text-secondary`}>
             I&apos;m a high school student <br className="sm:block hidden" />
             who loves to craft and code.
-          </h2>
+          </h3>
         </div>
-        <div className="relative flex-auto h-screen">
+        <div className="relative flex-auto h-full max-xl:w-full">
           <IslandCanvas />
         </div>
       </div>
