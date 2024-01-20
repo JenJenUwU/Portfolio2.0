@@ -7,6 +7,8 @@ const styles = {
     "font-medium lg:text-[30px] md:text-[26px] sm:text-[24px] xs:text-[20px] text-[16px]",
   heroIntroText:
     "font-normal font-mono lg:text-[18px] md:text-[16px] sm:text[14px] xs:text-[12px] text-[10px]",
+  footerText:
+    "font-medium font-mono lg:text-[16px] md:text-[14px] sm:text[12px] xs:text-[10px] text-[8px]",
 };
 
 export { styles };

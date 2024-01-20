@@ -15,7 +15,7 @@ const config: Config = {
         tertiary: "#88CBF5",
         quaternary: "#78A9D5",
         quinary: "#505D74",
-        senary: "#222531",
+        senary: "#1d212e",
       },
     },
   },
