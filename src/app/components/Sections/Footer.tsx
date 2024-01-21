@@ -4,7 +4,7 @@ import { styles } from "@/app/utils/styles";
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-center pb-10">
-      <div className={`${styles.heroPadding} w-full`}>
+      <div className={`${styles.footerPadding} w-full`}>
         <hr className="my-4 mx-auto border-secondary" />
       </div>
       <p className={`${styles.footerText} text-secondary`}>

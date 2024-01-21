@@ -1,5 +1,6 @@
 const styles = {
   heroPadding: "xl:px-48 px-12 max-xl:py-48",
+  footerPadding: "xl:px-48 px-12",
 
   heroHeadText:
     "font-bold lg:text-[80px] md:text-[70px] sm:text-[60px] xs:text-[50px] text-[40px]",
