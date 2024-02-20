@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 5000);
+    }, 3000);
   }, []);
   return (
     <main className="overflow-x-hidden z-0 bg-senary">
