@@ -7,7 +7,7 @@ const LoadingPage = () => {
     <div className="flex flex-col items-center justify-center h-screen bg-quinary">
       <div className="size-40">
         <motion.img
-          src="@/app/assets/icon.png"
+          src="./icon.png"
           alt="Icon"
           animate={{ rotate: 360 }}
           transition={{ duration: 2, repeat: Infinity }}
